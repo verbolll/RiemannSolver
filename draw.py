@@ -1,8 +1,11 @@
 import matplotlib.pylab as plt
+import os
 
-def setpic():
+def setpic(limitl = None, limitr = None):
     global fig, ax
     fig, ax = plt.subplots()
+    if limitl != None and limitr !=None:
+        ax.set_xlim(limitl, limitr)
   
 def shock(z, u, rho, p, us, ps, rhos, tnow, direction='l'):
     if direction == 'l':
@@ -17,6 +20,8 @@ def shock(z, u, rho, p, us, ps, rhos, tnow, direction='l'):
     ax.plot([z*tnow, z*tnow], [u, us], c='g')
     ax.plot([z*tnow, z*tnow], [p, ps], c='b')
     ax.plot([z*tnow, z*tnow], [rho, rhos], c='r')
+
+    return limit
 
     # ax.plot([0, z*tnow], [us, us], c='g')
     # ax.plot([0, z*tnow], [ps, ps], c='b')
@@ -40,20 +45,31 @@ def expan(zhead, ztail, u, rho, p, xspnlftexp, u_spnlftexp, p_spnlftexp, rho_spn
     # ax.plot([0, ztail*tnow], [ps, ps], c='b')
     # ax.plot([ztail*tnow, us*tnow], [rhos, rhos], c='r')
 
+    return limit
+
 def middle(us, ps, tnow, rho1s, rho2s, z1, z2):
+    ax.plot([z1*tnow, z2*tnow], [us, us], 'g', label='u')
+    ax.plot([z1*tnow, z2*tnow], [ps, ps], 'b', label='p')
     ax.plot([z1*tnow, z2*tnow], [us, us], 'g')
-    ax.plot([z1*tnow, z2*tnow], [ps, ps], 'b')
-    ax.plot([z1*tnow, z2*tnow], [us, us], 'g')
-    ax.plot([z1*tnow, us*tnow], [rho1s, rho1s], c='r')
+    ax.plot([z1*tnow, us*tnow], [rho1s, rho1s], c='r', label='rho')
     ax.plot([us*tnow, us*tnow], [rho1s, rho2s], c='r')
     ax.plot([us*tnow, z2*tnow], [rho2s, rho2s], c='r')
 
 def show():
     plt.grid()
+    plt.legend()
     plt.show()
     plt.close()
-def save():
+def save(tnow = None, video = False):
     plt.grid()
+    plt.legend()
+    if video == True:
+        try:
+            plt.savefig(rf'.\pic\{str(tnow).zfill(3)}.png', dpi=300)
+        except:
+            os.mkdir(r'.\pic')
+            plt.savefig(rf'.\pic\{str(tnow).zfill(3)}.png', dpi=300)
+        plt.close()
     plt.savefig('Riemann.png', dpi=300)
     plt.close()
 

@@ -6,22 +6,163 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>318</width>
-    <height>576</height>
+    <width>630</width>
+    <height>416</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Riemann</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_8">
+  <layout class="QHBoxLayout" name="horizontalLayout_5">
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout class="QVBoxLayout" name="verticalLayout_11">
      <item>
-      <layout class="QVBoxLayout" name="verticalLayout_4">
+      <widget class="QWidget" name="widget" native="true"/>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QLabel" name="p1_lab">
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLabel" name="p1_lab">
+           <property name="text">
+            <string>p1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="p1_edt">
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QLabel" name="p2_lab">
+           <property name="text">
+            <string>p2</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="p2_edt">
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="u1_lab">
+           <property name="text">
+            <string>u1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="u1_edt">
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="u2_lab">
+           <property name="text">
+            <string>u2</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="u2_edt">
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QLabel" name="rho1_lab">
+           <property name="text">
+            <string>rho1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="rho1_edt">
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="rho2_lab">
+           <property name="text">
+            <string>rho2</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="rho2_edt">
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QLabel" name="t_lab">
          <property name="text">
-          <string>p1</string>
+          <string>t</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -29,7 +170,10 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="p1_edt">
+        <widget class="QLineEdit" name="t_edt">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
          <property name="alignment">
           <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
@@ -38,126 +182,82 @@
       </layout>
      </item>
      <item>
-      <layout class="QVBoxLayout" name="verticalLayout_5">
-       <item>
-        <widget class="QLabel" name="p2_lab">
-         <property name="text">
-          <string>p2</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="p2_edt">
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_2">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QLabel" name="u1_lab">
-         <property name="text">
-          <string>u1</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="u1_edt">
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="QLabel" name="u2_lab">
-         <property name="text">
-          <string>u2</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="u2_edt">
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <layout class="QHBoxLayout" name="horizontalLayout_3">
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_6">
-       <item>
-        <widget class="QLabel" name="rho1_lab">
-         <property name="text">
-          <string>rho1</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="rho1_edt">
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
-       <item>
-        <widget class="QLabel" name="rho2_lab">
-         <property name="text">
-          <string>rho2</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="rho2_edt">
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </item>
-   <item>
-    <layout class="QVBoxLayout" name="verticalLayout_7">
-     <item>
-      <widget class="QLabel" name="t_lab">
+      <widget class="QPushButton" name="pushButton">
        <property name="text">
-        <string>t</string>
+        <string>calculate</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton">
+       <property name="text">
+        <string>make video</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <widget class="QLabel" name="t1_lab">
+           <property name="text">
+            <string>t1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="t1_edt">
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item>
+          <widget class="QLabel" name="t2_lab">
+           <property name="text">
+            <string>t2</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="t2_edt">
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_2" native="true"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_10">
+     <item>
+      <widget class="QLabel" name="pic_lab">
+       <property name="minimumSize">
+        <size>
+         <width>500</width>
+         <height>375</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
        </property>
        <property name="alignment">
         <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -165,46 +265,16 @@
       </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="t_edt">
+      <widget class="QLabel" name="tittle_lab">
+       <property name="text">
+        <string/>
+       </property>
        <property name="alignment">
         <set>Qt::AlignmentFlag::AlignCenter</set>
        </property>
       </widget>
      </item>
     </layout>
-   </item>
-   <item>
-    <widget class="QPushButton" name="pushButton">
-     <property name="text">
-      <string>calculate</string>
-     </property>
-    </widget>
-   </item>
-   <item>
-    <widget class="QLabel" name="pic_lab">
-     <property name="minimumSize">
-      <size>
-       <width>300</width>
-       <height>300</height>
-      </size>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignmentFlag::AlignCenter</set>
-     </property>
-    </widget>
-   </item>
-   <item>
-    <widget class="QLabel" name="tittle_lab">
-     <property name="text">
-      <string/>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignmentFlag::AlignCenter</set>
-     </property>
-    </widget>
    </item>
   </layout>
  </widget>

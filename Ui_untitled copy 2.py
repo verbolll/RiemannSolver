@@ -23,16 +23,9 @@ class Ui_Riemann(object):
     def setupUi(self, Riemann):
         if not Riemann.objectName():
             Riemann.setObjectName(u"Riemann")
-        Riemann.resize(630, 416)
-        self.horizontalLayout_5 = QHBoxLayout(Riemann)
-        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
-        self.verticalLayout_11 = QVBoxLayout()
-        self.verticalLayout_11.setObjectName(u"verticalLayout_11")
-        self.widget = QWidget(Riemann)
-        self.widget.setObjectName(u"widget")
-
-        self.verticalLayout_11.addWidget(self.widget)
-
+        Riemann.resize(318, 578)
+        self.verticalLayout_10 = QVBoxLayout(Riemann)
+        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.verticalLayout_4 = QVBoxLayout()
@@ -70,7 +63,7 @@ class Ui_Riemann(object):
         self.horizontalLayout.addLayout(self.verticalLayout_5)
 
 
-        self.verticalLayout_11.addLayout(self.horizontalLayout)
+        self.verticalLayout_10.addLayout(self.horizontalLayout)
 
         self.horizontalLayout_2 = QHBoxLayout()
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
@@ -109,7 +102,7 @@ class Ui_Riemann(object):
         self.horizontalLayout_2.addLayout(self.verticalLayout_2)
 
 
-        self.verticalLayout_11.addLayout(self.horizontalLayout_2)
+        self.verticalLayout_10.addLayout(self.horizontalLayout_2)
 
         self.horizontalLayout_3 = QHBoxLayout()
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
@@ -148,7 +141,7 @@ class Ui_Riemann(object):
         self.horizontalLayout_3.addLayout(self.verticalLayout_3)
 
 
-        self.verticalLayout_11.addLayout(self.horizontalLayout_3)
+        self.verticalLayout_10.addLayout(self.horizontalLayout_3)
 
         self.verticalLayout_7 = QVBoxLayout()
         self.verticalLayout_7.setObjectName(u"verticalLayout_7")
@@ -166,17 +159,17 @@ class Ui_Riemann(object):
         self.verticalLayout_7.addWidget(self.t_edt)
 
 
-        self.verticalLayout_11.addLayout(self.verticalLayout_7)
+        self.verticalLayout_10.addLayout(self.verticalLayout_7)
 
         self.pushButton = QPushButton(Riemann)
         self.pushButton.setObjectName(u"pushButton")
 
-        self.verticalLayout_11.addWidget(self.pushButton)
+        self.verticalLayout_10.addWidget(self.pushButton)
 
         self.radioButton = QRadioButton(Riemann)
         self.radioButton.setObjectName(u"radioButton")
 
-        self.verticalLayout_11.addWidget(self.radioButton)
+        self.verticalLayout_10.addWidget(self.radioButton)
 
         self.horizontalLayout_4 = QHBoxLayout()
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
@@ -215,21 +208,11 @@ class Ui_Riemann(object):
         self.horizontalLayout_4.addLayout(self.verticalLayout_9)
 
 
-        self.verticalLayout_11.addLayout(self.horizontalLayout_4)
+        self.verticalLayout_10.addLayout(self.horizontalLayout_4)
 
-        self.widget_2 = QWidget(Riemann)
-        self.widget_2.setObjectName(u"widget_2")
-
-        self.verticalLayout_11.addWidget(self.widget_2)
-
-
-        self.horizontalLayout_5.addLayout(self.verticalLayout_11)
-
-        self.verticalLayout_10 = QVBoxLayout()
-        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
         self.pic_lab = QLabel(Riemann)
         self.pic_lab.setObjectName(u"pic_lab")
-        self.pic_lab.setMinimumSize(QSize(500, 375))
+        self.pic_lab.setMinimumSize(QSize(300, 225))
         self.pic_lab.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.verticalLayout_10.addWidget(self.pic_lab)
@@ -239,9 +222,6 @@ class Ui_Riemann(object):
         self.tittle_lab.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.verticalLayout_10.addWidget(self.tittle_lab)
-
-
-        self.horizontalLayout_5.addLayout(self.verticalLayout_10)
 
 
         self.retranslateUi(Riemann)
